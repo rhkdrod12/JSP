@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="">
+		<table >
+			<tr style="height: 100px;">
+				<th colspan="2" style="font-size: 30px;" align="left">Emp 정보</th>
+			</tr>
+			<tr>
+				<td>사원번호 </td>
+				<td><input type="text" name="emp_no" placeholder="사원번호 입력" required="required"> </td>
+			</tr>
+			<tr>
+				<td>이름 </td>
+				<td><input type="text" name="emp_name" placeholder="사원이름 입력" required="required"> </td>
+			</tr>
+			<tr>
+				<td>성별</td> 
+				<td>
+					<input type="radio" name="sex" id="radio_sex1" checked="checked"><label for="radio_sex1">남자</label>
+					<input type="radio" name="sex" id="radio_sex2"><label for="radio_sex2">여자</label>
+				</td>
+			</tr>
+			<tr>
+				<td>직업</td>
+				<td><input type="text" name="emp_job"> </td>
+			</tr>
+			<tr>
+				<td>상사</td>
+				<td>
+					<select name="manager_no" style="width: 100%; vertical-align:middle; text-align-last: right;">
+						<option>7300</option> 
+						<option>7400</option> 
+						<option>7500</option> 
+						<option>7600</option> 
+						<option>7700</option> 
+						<option>7800</option> 
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>입사일</td>
+				<td><input type="date" name="hire_date" style="width: 98%"> </td>
+			</tr>
+			<tr>
+				<td>급여</td>
+				<td><input type="text" name="salary" pattern="[0-9]*" > </td>
+			</tr>
+			<tr>		
+				<td>커미션</td>
+				<td><input type="text" name="cmt"> </td>
+			</tr>	
+			<tr>
+				<td>부서번호</td>
+				<td>
+					<select name="dept_no" style="width: 100%; text-align-last:right; " >
+						<option>100 영업부</option> 
+						<option>200 관리부</option> 
+						<option>300 개발부</option> 
+						<option>400 홍보부</option> 
+						<option>500 자재부</option> 
+						<option>600 지원부</option> 
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="right">
+					<input type="submit" value="저장">
+					<input type="button" value="취소">
+				</td>
+			</tr>
+		</table>
+	</form>
+
+
+
+</body>
+</html>

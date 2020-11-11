@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>table은 표를 만드는 태그</h3>
+	<!-- 테이블은 표를 작성하는 태그 -->
+	<p>
+		tr : 행을 의미 <br> th : 열의 제목을 의미 <br> td : 열의 데이터를 의미 <br>
+		<br> tr로 선언 후에 그 안에 th, td를 선언하여 사용하는 방식 <br>
+	</p>
+	
+	<table border="1" style="width: 300px">
+		<!-- table에 width를 쓰는 방식은 추천되는 방식이 아님, style 속성을 사용 -->
+		<tr>
+			<th>이름</th>
+			<th>성별</th>
+			<th>주소</th>
+			<th>나이</th>
+			<th rowspan=4">test</th>
+		</tr>
+		<tr align="center">
+			<td>홍길동</td>
+			<td>남</td>
+			<td>서울</td>
+			<td>20</td>
+		</tr>
+		<tr align="center">
+			<td>홍길자</td>
+			<td>여</td>
+			<td>서울</td>
+			<td>20</td>
+		</tr>
+
+		<tr align="center">
+			<td colspan="4" align="right">합계:400</td>
+		</tr>
+
+	</table>
+
+
+</body>
+</html>

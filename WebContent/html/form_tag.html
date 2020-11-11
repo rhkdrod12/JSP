@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<p>form태크는 클라이언트에서 사용자가 작성한 정보를, 서버로 전송하기 위해 사용하는 기초 태그</p>
+
+	<form action="text_tag.html" method="get">
+		<h3>회원가입 양식</h3>
+		<hr/>
+		아이디 : <input name="id" type="text" placeholder="아이디" required="required" autofocus="autofocus"> <br/>
+		비밀번호 : <input name="pw" type="password" placeholder="비밀번호" required="required"> <br/>
+		이메일 : <input name="이메일" type="email" > <br/>
+		
+		<!-- radio name으로 통일시켜야 여러개의 버튼을 하나의 그룹으로 취급함  -->
+		전공: 
+		<input name=major type="radio" id="radio_major1" checked="checked"><label for="radio_major1">경영학과</label> 
+		<input name=major type="radio" id="radio_major2"><label for="radio_major2">컴퓨터과</label>
+		<input name=major type="radio" id="radio_major3"><label for="radio_major3">전기전자</label>
+		<input name=major type="radio" id="radio_major4"><label for="radio_major4">기계공학</label>
+		<br>
+		
+		취미:
+		<input type="checkbox" name=inter>자바
+		<input type="checkbox" name=inter>DB
+		<input type="checkbox" name=inter>JSP
+		<input type="checkbox" name=inter>JavaScript
+		<br>
+		
+		통신사:
+		<select name="phone1">
+			<option>SKT</option>
+			<option>KT</option>
+			<option>LGU+</option>
+		</select>
+		<br>
+		<!-- textarea 장문의 글을 쓸 수 있는 박스 -->
+		자기소개:<br>
+		<textarea rows="5" cols="50" name="words"></textarea>		
+		<br>
+		
+		<input type="submit" value="가입하기">
+		<br>
+		<input type="button" value="그냥 버튼 나중에 기능 부여해서 사용" >
+		<button type="submit">가입하기</button>
+		
+		
+	</form>
+
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">	<!-- 스키마 구조에 대한 정보 -->
+	
+	<display-name>JSP</display-name>
+	
+	<!-- 에러처리 -->
+	<!-- 서버 전체에서 에러가 발생했을 경우에 에러코드에 맞는 해당 페이지로 이동시킴 -->
+	<!-- <error-page>
+		<error-code>404</error-code>
+		<location>/errorpage/error_view.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>505</error-code>
+		<location>/errorpage/error_view.jsp</location>
+	</error-page> -->
+	
+	<!-- 예외처리 -->
+	<!-- 서버 전체에서 예외가 발생했을 경우에 예외에 맞는 해당 페이지로 이동시킴 -->
+	<!-- <error-page>
+		<exception-type>java.lang.NullPointerException</exception-type>
+		<location>/errorpage/error_view.jsp</location>
+	</error-page> -->
+	
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<!-- 서블릿등록 -->
+	<servlet>
+		<servlet-name>appServlet</servlet-name>						<!-- 별칭 -->
+		<servlet-class>com.servlet.testServlet2</servlet-class>		<!-- 자바파일 경로 -->
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>appServlet</servlet-name>						<!-- 자파파일 경로와 일치하는 별칭을 입력 -->
+		<url-pattern>/apple</url-pattern>							<!-- 사용자 경로 지정 -->
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>appServlet2</servlet-name>					<!-- 별칭 -->
+		<servlet-class>com.servlet.testServlet2</servlet-class>		<!-- 자바파일 경로 -->
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>appServlet2</servlet-name>					<!-- 자파파일 경로와 일치하는 별칭을 입력 -->
+		<url-pattern>/apple2</url-pattern>							<!-- 사용자 경로 지정 -->
+	</servlet-mapping>
+	
+
+</web-app>
